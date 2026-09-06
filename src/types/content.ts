@@ -97,6 +97,30 @@ export interface TicketQuestion {
   /** Канонический ответ для режима «напечатать» — сравнивается мягко (без диакритики, кириллица тоже принимается). */
   answer: string
   explanation: string
+  /** Если вопрос про конкретный знак — id из content/signs/signs.json, показывается как картинка. */
+  sign_id?: string
+  source?: Source
+  status?: ContentStatus
+}
+
+export type SignGroup = 'opasnost' | 'prvenstvo' | 'zabrana' | 'obaveza' | 'obavestenje'
+export type SignShape =
+  | 'triangle'
+  | 'triangle-inverted'
+  | 'circle-red'
+  | 'circle-blue'
+  | 'octagon-red'
+  | 'diamond-yellow'
+  | 'square-blue'
+
+export interface RoadSign {
+  id: string
+  name_sr: string
+  name_ru: string
+  group: SignGroup
+  shape: SignShape
+  symbol: string
+  explanation: string
   source?: Source
   status?: ContentStatus
 }

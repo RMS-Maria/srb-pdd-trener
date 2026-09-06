@@ -45,6 +45,8 @@
   --tab-tickets-bg: #ede6ee;
   --tab-profile: #a3705f;
   --tab-profile-bg: #f3e6df;
+  --tab-signs: #4f8a83;
+  --tab-signs-bg: #e4f0ee;
 
   --shadow-sm: 0 1px 3px rgba(54, 47, 34, 0.08);
   --shadow-md: 0 6px 20px rgba(54, 47, 34, 0.1);
@@ -88,6 +90,8 @@
   --tab-tickets-bg: #332a38;
   --tab-profile: #cf9a8a;
   --tab-profile-bg: #3a2820;
+  --tab-signs: #8bc3ba;
+  --tab-signs-bg: #223a37;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -164,6 +168,7 @@ a {
 .section-flashcards .top-bar { background: var(--tab-flashcards); }
 .section-tickets .top-bar { background: var(--tab-tickets); }
 .section-profile .top-bar { background: var(--tab-profile); }
+.section-signs .top-bar { background: var(--tab-signs); }
 
 .top-bar__title {
   font-weight: 800;
@@ -246,6 +251,7 @@ a {
 .nav-rail a.nav-flashcards.active { color: var(--tab-flashcards); background: var(--tab-flashcards-bg); border-left-color: var(--tab-flashcards); }
 .nav-rail a.nav-tickets.active { color: var(--tab-tickets); background: var(--tab-tickets-bg); border-left-color: var(--tab-tickets); }
 .nav-rail a.nav-profile.active { color: var(--tab-profile); background: var(--tab-profile-bg); border-left-color: var(--tab-profile); }
+.nav-rail a.nav-signs.active { color: var(--tab-signs); background: var(--tab-signs-bg); border-left-color: var(--tab-signs); }
 
 .nav-rail a.active {
   font-weight: 700;
@@ -388,6 +394,99 @@ a {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--info);
+}
+
+.sign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 0.6rem;
+  margin: 0.6rem 0 1.2rem;
+}
+
+.sign-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.6rem 0.4rem;
+  text-align: center;
+  grid-column: span 1;
+}
+
+.sign-card:has(.sign-card__details) {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.sign-card__name {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+.sign-card__details {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.word-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.word-row {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.word-row__main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  background: none;
+  border: none;
+  text-align: left;
+  min-height: 44px;
+  color: var(--text);
+}
+
+.word-row__srb {
+  font-weight: 700;
+  flex-shrink: 0;
+  min-width: 38%;
+}
+
+.word-row__ru {
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.priority-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.priority-dot--critical { background: var(--danger); }
+.priority-dot--high { background: var(--warning); }
+.priority-dot--medium { background: var(--info); }
+.priority-dot--low { background: var(--border); }
+
+.word-row__details {
+  padding: 0 0.9rem 0.9rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.7rem;
 }
 
 .ticket__question {
@@ -567,6 +666,7 @@ a {
 .section-flashcards .chip.active { background: var(--tab-flashcards); }
 .section-tickets .chip.active { background: var(--tab-tickets); }
 .section-profile .chip.active { background: var(--tab-profile); }
+.section-signs .chip.active { background: var(--tab-signs); }
 
 /* В тёмной теме tab-цвета и brand — светлые пастельные оттенки, рассчитанные на текст
    на тёмном фоне, поэтому в заливке чипа их надо сочетать с тёмным текстом, не с белым. */

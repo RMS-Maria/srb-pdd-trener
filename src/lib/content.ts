@@ -1,4 +1,4 @@
-import type { AlphabetLetter, GlossaryCard, TheoryTopic, TicketQuestion } from '../types/content'
+import type { AlphabetLetter, GlossaryCard, RoadSign, TheoryTopic, TicketQuestion } from '../types/content'
 
 const glossaryModules = import.meta.glob('../../content/glossary/*.json', {
   eager: true,
@@ -20,6 +20,11 @@ const ticketModules = import.meta.glob('../../content/questions/*.json', {
   import: 'default',
 }) as Record<string, TicketQuestion[]>
 
+const signModules = import.meta.glob('../../content/signs/*.json', {
+  eager: true,
+  import: 'default',
+}) as Record<string, RoadSign[]>
+
 export function getAllGlossaryCards(): GlossaryCard[] {
   return Object.values(glossaryModules).flat()
 }
@@ -38,4 +43,12 @@ export function getLatinAlphabetGuide(): AlphabetLetter[] {
 
 export function getTicketQuestions(): TicketQuestion[] {
   return Object.values(ticketModules).flat()
+}
+
+export function getRoadSigns(): RoadSign[] {
+  return Object.values(signModules).flat()
+}
+
+export function getRoadSignById(id: string): RoadSign | undefined {
+  return getRoadSigns().find((s) => s.id === id)
 }

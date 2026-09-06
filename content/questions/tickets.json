@@ -217,5 +217,97 @@
     "explanation": "Проезжая часть — часть дороги, предназначенная в первую очередь для транспорта.",
     "source": { "type": "law", "document": "Zakon o osnovama bezbednosti saobraćaja na putevima", "article": "član 10, tačka 11", "checked_at": "2026-09-06" },
     "status": "verified_official"
+  },
+  {
+    "id": "q21",
+    "topic": "znaci",
+    "sign_id": "prvenstvo-stop",
+    "question": "Šta vozač mora da uradi na ovom znaku?",
+    "options": ["Obavezno se potpuno zaustaviti, pa nastaviti kad je bezbedno", "Samo usporiti", "Dati prednost samo biciklistima", "Ništa posebno"],
+    "correct_index": 0,
+    "answer": "obavezno se zaustaviti",
+    "explanation": "Знак STOP требует полной остановки, а не просто снижения скорости.",
+    "status": "pedagogical"
+  },
+  {
+    "id": "q22",
+    "topic": "znaci",
+    "sign_id": "prvenstvo-ustupanje",
+    "question": "Šta znači ovaj znak (obrnuti trougao)?",
+    "options": ["Obavezna potpuna stanica", "Ustupanje prvenstva prolaza", "Zabrana ulaska", "Najava kružnog toka"],
+    "correct_index": 1,
+    "answer": "ustupanje prvenstva",
+    "explanation": "Перевёрнутый треугольник = уступите дорогу, в отличие от STOP это не требует полной остановки, если дорога свободна.",
+    "status": "pedagogical"
+  },
+  {
+    "id": "q23",
+    "topic": "znaci",
+    "sign_id": "prvenstvo-put-sa-prvenstvom",
+    "question": "Šta znači ovaj žuti romb?",
+    "options": ["Put sa prvenstvom prolaza", "Zabranjen ulaz", "Obavezan pravac", "Parking"],
+    "correct_index": 0,
+    "answer": "put sa prvenstvom",
+    "explanation": "Жёлтый ромб означает, что вы едете по главной дороге.",
+    "status": "pedagogical"
+  },
+  {
+    "id": "q24",
+    "topic": "znaci",
+    "sign_id": "zabrana-brzina-50",
+    "question": "Šta znači ovaj znak?",
+    "options": ["Ograničenje brzine na 50 km/h", "Minimalna brzina 50 km/h", "Udaljenost 50 m do raskrsnice", "Broj puta 50"],
+    "correct_index": 0,
+    "answer": "ogranicenje brzine 50",
+    "explanation": "Красный круг с числом — знак ограничения максимальной скорости.",
+    "status": "pedagogical"
+  },
+  {
+    "id": "q25",
+    "topic": "znaci",
+    "sign_id": "obaveza-pravac",
+    "question": "Kojoj grupi znakova pripada ovaj plavi krug sa strelicom?",
+    "question_translation": "К какой группе знаков относится этот синий круг со стрелкой?",
+    "options": ["Znakovi obaveštenja", "Znakovi opasnosti", "Znakovi izričitih naredbi (obaveza)", "Dopunska tabla"],
+    "correct_index": 2,
+    "answer": "znakovi izricitih naredbi",
+    "explanation": "Синие круглые знаки с направлением — подтип «obaveza» внутри знаков предписания.",
+    "source": { "type": "regulation", "document": "Pravilnik o saobraćajnoj signalizaciji", "article": "član 6, član 24", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q26",
+    "topic": "znaci",
+    "sign_id": "opasnost-pesacki-prelaz",
+    "question": "Kojoj grupi znakova pripada ovaj trougaoni znak sa crvenom ivicom?",
+    "question_translation": "К какой группе относится этот треугольный знак с красной каймой?",
+    "options": ["Znakovi opasnosti", "Znakovi obaveštenja", "Znakovi izričitih naredbi", "Dopunska tabla"],
+    "correct_index": 0,
+    "answer": "znakovi opasnosti",
+    "explanation": "Треугольник с красной каймой на белом фоне — предупреждающий знак (znak opasnosti).",
+    "source": { "type": "regulation", "document": "Pravilnik o saobraćajnoj signalizaciji", "article": "član 6", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q27",
+    "topic": "znaci",
+    "sign_id": "zabrana-preticanje",
+    "question": "Šta znači ovaj znak?",
+    "options": ["Zabranjeno preticanje", "Obavezno preticanje", "Zabranjeno parkiranje", "Kraj ograničenja brzine"],
+    "correct_index": 0,
+    "answer": "zabranjeno preticanje",
+    "explanation": "Красный круг с символом обгона — обгон запрещён на этом участке.",
+    "status": "pedagogical"
+  },
+  {
+    "id": "q28",
+    "topic": "znaci",
+    "sign_id": "obavestenje-parking",
+    "question": "Šta znači ovaj znak?",
+    "options": ["Mesto za parkiranje", "Zabranjeno parkiranje", "Obavezno skretanje", "Benzinska pumpa"],
+    "correct_index": 0,
+    "answer": "mesto za parkiranje",
+    "explanation": "Синий квадрат с буквой P — место, отведённое для парковки.",
+    "status": "pedagogical"
   }
 ]

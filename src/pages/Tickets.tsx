@@ -1,10 +1,21 @@
 import { useState } from 'react'
-import { getTicketQuestions } from '../lib/content'
+import { getRoadSignById, getTicketQuestions } from '../lib/content'
 import { answersMatch } from '../lib/answerCheck'
 import { STATUS_LABELS, statusClass } from '../lib/labels'
+import { SignIcon } from '../components/SignIcon'
 import type { TicketQuestion } from '../types/content'
 
 type Mode = 'choice' | 'type'
+
+function QuestionSign({ signId }: { signId: string }) {
+  const sign = getRoadSignById(signId)
+  if (!sign) return null
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '0.6rem' }}>
+      <SignIcon shape={sign.shape} symbol={sign.symbol} size={96} />
+    </div>
+  )
+}
 
 function ChoiceQuestion({ q, onDone }: { q: TicketQuestion; onDone: (correct: boolean) => void }) {
   const [selected, setSelected] = useState<number | null>(null)
@@ -22,6 +33,7 @@ function ChoiceQuestion({ q, onDone }: { q: TicketQuestion; onDone: (correct: bo
           {STATUS_LABELS[q.status]}
         </span>
       )}
+      {q.sign_id && <QuestionSign signId={q.sign_id} />}
       <p className="ticket__question">{q.question}</p>
       <div className="ticket__options">
         {q.options.map((opt, i) => {
@@ -71,6 +83,7 @@ function TypeQuestion({ q, onDone }: { q: TicketQuestion; onDone: (correct: bool
           {STATUS_LABELS[q.status]}
         </span>
       )}
+      {q.sign_id && <QuestionSign signId={q.sign_id} />}
       <p className="ticket__question">{q.question}</p>
       <input
         className="text-input"

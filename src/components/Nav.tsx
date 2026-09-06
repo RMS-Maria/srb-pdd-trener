@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 const links = [
   { to: '/', label: 'Теория', icon: '📘', end: true, section: 'nav-theory' },
   { to: '/glossary', label: 'Словарь', icon: '📚', section: 'nav-glossary' },
+  { to: '/signs', label: 'Знаки', icon: '🚸', section: 'nav-signs' },
   { to: '/flashcards', label: 'Карточки', icon: '🎴', section: 'nav-flashcards' },
   { to: '/tickets', label: 'Билеты', icon: '🎫', section: 'nav-tickets' },
   { to: '/profile', label: 'Профиль', icon: '👤', section: 'nav-profile' },

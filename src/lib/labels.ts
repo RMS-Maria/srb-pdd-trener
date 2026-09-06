@@ -1,4 +1,13 @@
-import type { ContentStatus, TrapType } from '../types/content'
+import type { ContentStatus, ExamPriority, TrapType } from '../types/content'
+
+export const PRIORITY_LABELS: Record<ExamPriority, string> = {
+  critical: '🔴 критично',
+  high: '🟠 очень важно',
+  medium: '🟡 важно',
+  low: '⚪ пригодится',
+}
+
+export const PRIORITY_ORDER: ExamPriority[] = ['critical', 'high', 'medium', 'low']
 
 export const TRAP_TYPE_LABELS: Record<TrapType, string> = {
   false_friend: '⚠️ ложный друг',
