@@ -1,0 +1,41 @@
+{
+  "id": "vertikalna-signalizacija",
+  "order": 2,
+  "title_sr": "Vertikalna signalizacija (saobraćajni znaci)",
+  "title_ru": "Вертикальная сигнализация (дорожные знаки)",
+  "sections": [
+    {
+      "heading": "Три официальные группы знаков (не четыре!)",
+      "body_sr": "Po Pravilniku, saobraćajni znakovi su: znakovi opasnosti, znakovi izričitih naredbi i znakovi obaveštenja. To su tri grupe — ne četiri.",
+      "body_ru": "По официальному Pravilnik o saobraćajnoj signalizaciji (član 6) знаки делятся ровно на ТРИ группы: предупреждающие (znakovi opasnosti), знаки предписания (znakovi izričitih naredbi) и информационные (znakovi obaveštenja). Это не четыре независимые группы — важно не путать со знаками запрета (см. ниже).",
+      "terms": [
+        { "sr_latin": "znak opasnosti", "sr_cyrillic": "знак опасности", "ru_translation": "предупреждающий знак", "glossary_id": "znak-opasnosti" },
+        { "sr_latin": "znak izričitih naredbi", "sr_cyrillic": "знак изричитих наредби", "ru_translation": "знак предписания", "glossary_id": "znak-izricitih-naredbi" },
+        { "sr_latin": "znak obaveštenja", "sr_cyrillic": "знак обавештења", "ru_translation": "информационный знак", "glossary_id": "znak-obavestenja" }
+      ],
+      "source": {
+        "type": "regulation",
+        "document": "Pravilnik o saobraćajnoj signalizaciji",
+        "article": "član 6",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Знак запрета — это подтип знака предписания",
+      "body_sr": "Znakovi izričitih naredbi su: znakovi kojima je propisano prvenstvo prolaza, znakovi zabrane i ograničenja i znakovi kojima su propisane obaveze.",
+      "body_ru": "Самая частая ошибка (в том числе моя собственная в более ранней версии этого конспекта): думать, что «знак предписания» и «знак запрета» — это два равноправных типа. На самом деле «znak zabrane» — это ПОДТИП внутри «znakovi izričitih naredbi», наряду со знаками приоритета проезда и знаками обязательных действий. Все три подтипа вместе и образуют одну из трёх официальных групп.",
+      "terms": [
+        { "sr_latin": "znak zabrane", "sr_cyrillic": "знак забране", "ru_translation": "запрещающий знак (подтип)", "glossary_id": "znak-zabrane" }
+      ],
+      "source": {
+        "type": "regulation",
+        "document": "Pravilnik o saobraćajnoj signalizaciji",
+        "article": "član 24",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official",
+      "diagram": "SAOBRAĆAJNI ZNAKOVI\n├── znakovi opasnosti\n├── znakovi izričitih naredbi\n│   ├── prvenstvo prolaza\n│   ├── zabrane i ograničenja\n│   └── obaveze\n└── znakovi obaveštenja"
+    }
+  ]
+}

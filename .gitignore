@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.local
+.DS_Store
+*.log
+
+# посторонний установщик, случайно оказался в папке проекта — не часть сайта
+Claude Setup.exe
+
+# рабочие экспорты контента для кросс-проверки, не часть сайта
+content-export-for-review.md
+contentexportforreview.md

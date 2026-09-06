@@ -1,0 +1,10 @@
+[
+  { "letter": "č", "cyrillic": "ч", "note": "твёрдое «ч», как в слове «час»", "example_sr": "čovek", "example_ru": "человек" },
+  { "letter": "ć", "cyrillic": "ћ", "note": "мягкое «ть/чь» — среднее между русскими «ч» и «ть», отдельного такого звука в русском нет", "example_sr": "ćevapi", "example_ru": "ћевапи (блюдо), звук мягче, чем č" },
+  { "letter": "š", "cyrillic": "ш", "note": "как русское «ш»", "example_sr": "škola", "example_ru": "школа" },
+  { "letter": "ž", "cyrillic": "ж", "note": "как русское «ж»", "example_sr": "žmigavac", "example_ru": "поворотник" },
+  { "letter": "đ", "cyrillic": "ђ", "note": "мягкое «дь/джь» — буквы нет в русском алфавите", "example_sr": "đak", "example_ru": "ученик" },
+  { "letter": "dž", "cyrillic": "џ", "note": "твёрдое «дж», как в слове «джаз»", "example_sr": "džak", "example_ru": "мешок" },
+  { "letter": "lj", "cyrillic": "љ", "note": "мягкое «ль» — но это ОДНА буква/звук, не «л»+«й»", "example_sr": "ljudi", "example_ru": "люди" },
+  { "letter": "nj", "cyrillic": "њ", "note": "мягкое «нь» — тоже одна буква/звук", "example_sr": "konj", "example_ru": "конь" }
+]

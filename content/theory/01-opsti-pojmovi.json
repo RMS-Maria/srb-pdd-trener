@@ -1,0 +1,79 @@
+{
+  "id": "opsti-pojmovi",
+  "order": 1,
+  "title_sr": "Opšti pojmovi",
+  "title_ru": "Общие понятия",
+  "sections": [
+    {
+      "heading": "Put — юридическое определение",
+      "body_sr": "Put je, po zakonu, svaki javni put i nekategorisani put na kojima se vrši saobraćaj. Javni put je površina od opšteg značaja za saobraćaj koju svako može slobodno da koristi pod uslovima određenim zakonom.",
+      "body_ru": "«Put» по закону — это категория дороги: любая дорога общего пользования (javni put) и некатегоризованная дорога, на которых происходит движение. «Javni put» — поверхность общего значения для движения, которую каждый может свободно использовать на условиях, определённых законом. Это официальное определение — не путайте с тем, ЧТО физически расположено на дороге (это отдельные термины ниже).",
+      "terms": [
+        { "sr_latin": "put", "sr_cyrillic": "пут", "ru_translation": "дорога (категория)", "glossary_id": "put" },
+        { "sr_latin": "javni put", "sr_cyrillic": "јавни пут", "ru_translation": "дорога общего пользования", "glossary_id": "javni-put" }
+      ],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 10, tačka 1-2",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Из чего состоит дорожная поверхность",
+      "body_sr": "Kolovoz je deo površine puta namenjen prvenstveno za saobraćaj vozila. Trotoar je posebno uređena saobraćajna površina namenjena za kretanje pešaka, koja nije u istom nivou sa kolovozom. Biciklistička staza je izgrađena saobraćajna površina namenjena za saobraćaj bicikala, koja se proteže uzduž kolovoza.",
+      "body_ru": "Проезжая часть (kolovoz) — часть поверхности дороги, предназначенная в первую очередь для движения транспортных средств. Тротуар (trotoar) — отдельно обустроенная поверхность для движения пешеходов, расположенная не на одном уровне с проезжей частью. Велодорожка (biciklistička staza) — построенная поверхность для велосипедного движения, идущая вдоль проезжей части. Это три разных типа поверхности одной и той же дороги — не части одного «put», а отдельно определённые в законе понятия.",
+      "terms": [
+        { "sr_latin": "kolovoz", "sr_cyrillic": "коловоз", "ru_translation": "проезжая часть", "glossary_id": "kolovoz" }
+      ],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 10, tačka 11-14",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Raskrsnica i prvenstvo prolaza",
+      "body_sr": "Raskrsnica je površina na kojoj se ukrštaju ili spajaju dva ili više puteva. Na raskrsnici je ključno pitanje ko ima prvenstvo prolaza — pravo da prođe pre drugih.",
+      "body_ru": "Перекрёсток (raskrsnica) — поверхность, на которой пересекаются или соединяются два и более путей. На перекрёстке ключевой вопрос — у кого преимущество проезда, то есть право проехать раньше других. Кто именно имеет преимущество в конкретной ситуации, определяют в первую очередь знаки и разметка.",
+      "terms": [
+        { "sr_latin": "raskrsnica", "sr_cyrillic": "раскрсница", "ru_translation": "перекрёсток", "glossary_id": "raskrsnica" },
+        { "sr_latin": "prvenstvo prolaza", "sr_cyrillic": "првенство пролаза", "ru_translation": "преимущество проезда", "glossary_id": "prvenstvo-prolaza" }
+      ],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 10, tačka 24",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Если знаков и разметки нет — правило правой стороны",
+      "body_sr": "Ako raskrsnica nije regulisana znacima, semaforom ili markacijom, važi pravilo desne strane: vozač je dužan da propusti vozilo koje dolazi sa njegove desne strane.",
+      "body_ru": "Если перекрёсток НЕ регулируется знаками, светофором или разметкой — действует правило правой стороны: водитель обязан пропустить транспортное средство, приближающееся справа. Это правило — запасной вариант на случай отсутствия сигнализации, а не универсальное правило для любого перекрёстка. Там, где есть знак приоритета, действует именно он.",
+      "terms": [
+        { "sr_latin": "pravilo desne strane", "sr_cyrillic": "правило десне стране", "ru_translation": "правило правой стороны", "glossary_id": "pravilo-desne-strane" }
+      ],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 47, stav 3",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Kružni tok",
+      "body_sr": "Kružni tok (raskrsnica sa kružnim tokom saobraćaja) je vrsta raskrsnice gde se saobraćaj kreće u krug oko centralnog ostrva.",
+      "body_ru": "Кольцевая развязка (kružni tok) — тип перекрёстка, где движение идёт по кругу вокруг центрального островка. Кто имеет преимущество на конкретном кольце — определяют знаки на конкретном въезде, это не сводится к одному общему правилу «кто уже внутри».",
+      "terms": [
+        { "sr_latin": "kružni tok", "sr_cyrillic": "кружни ток", "ru_translation": "круговой перекрёсток / круговое движение", "glossary_id": "kruzni-tok" }
+      ],
+      "status": "verified_lexical"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ucesnici-u-saobracaju",
+  "order": 3,
+  "title_sr": "Učesnici u saobraćaju",
+  "title_ru": "Участники движения",
+  "sections": [
+    {
+      "heading": "Официальное определение шире, чем кажется",
+      "body_sr": "Po zakonu, učesnik u saobraćaju je lice koje u saobraćaju na putu upravlja vozilom ili se nalazi u vozilu ili na vozilu, ili koje tera, vodi ili jaše životinju — kao i pešaci i druga lica na putu.",
+      "body_ru": "По закону «участник движения» — это не только водитель, пешеход и велосипедист. Это любое лицо, которое управляет транспортным средством, ИЛИ находится в/на транспортном средстве (например, пассажир), ИЛИ погоняет/ведёт/едет верхом на животном — а также пешеходы и другие лица на дороге. Ниже — только главные категории, с которыми вы столкнётесь чаще всего на экзамене, а не исчерпывающий список.",
+      "terms": [],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 10, tačka 47",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Главные категории для начинающего",
+      "body_sr": "Vozač upravlja vozilom i odgovoran je za bezbednost. Pešak se kreće trotoarom i koristi pešački prelaz za prelazak kolovoza. Biciklista se kreće biciklističkom stazom, a ako je nema — desnom ivicom kolovoza.",
+      "body_ru": "Водитель управляет транспортным средством и отвечает за безопасность. Пешеход двигается по тротуару и использует пешеходный переход для пересечения проезжей части. Велосипедист двигается по велодорожке, а если её нет — по правому краю проезжей части.",
+      "terms": [
+        { "sr_latin": "vozač", "sr_cyrillic": "возач", "ru_translation": "водитель", "glossary_id": "vozac" },
+        { "sr_latin": "pešak", "sr_cyrillic": "пешак", "ru_translation": "пешеход", "glossary_id": "pesak" },
+        { "sr_latin": "biciklista", "sr_cyrillic": "бициклиста", "ru_translation": "велосипедист", "glossary_id": "biciklista" }
+      ],
+      "status": "pedagogical"
+    },
+    {
+      "heading": "Пешеходный переход — не «пешеход всегда главный»",
+      "body_sr": "Vozač mora da prilagodi brzinu vozila kada prilazi pešačkom prelazu, tako da može bezbedno da se zaustavi. Ovo je opšta obaveza vozača, koja važi nezavisno od toga da li je konkretan pešak već stupio na prelaz.",
+      "body_ru": "Проверенное правило: водитель обязан заранее скорректировать скорость при приближении к пешеходному переходу, чтобы иметь возможность безопасно остановиться. Это общая обязанность водителя. НЕ сводите это к формуле «пешеход всегда имеет преимущество» — на переходах, регулируемых светофором или уполномоченным лицом, действуют их сигналы, а не общее правило.",
+      "terms": [
+        { "sr_latin": "pešački prelaz", "sr_cyrillic": "пешачки прелаз", "ru_translation": "пешеходный переход", "glossary_id": "pesacki-prelaz" },
+        { "sr_latin": "biciklistička staza", "sr_cyrillic": "бициклистичка стаза", "ru_translation": "велосипедная дорожка", "glossary_id": "biciklisticka-staza" }
+      ],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 23",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    }
+  ]
+}

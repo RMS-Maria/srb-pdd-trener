@@ -1,0 +1,222 @@
+[
+  {
+    "id": "vozilo",
+    "sr_latin": "vozilo",
+    "sr_cyrillic": "возило",
+    "ru_translation": "транспортное средство",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Motorno vozilo mora imati ispravne kočnice.",
+    "example_ru": "Механическое транспортное средство должно иметь исправные тормоза.",
+    "audio_text": "vozilo",
+    "image": null
+  },
+  {
+    "id": "desno",
+    "sr_latin": "desno",
+    "sr_cyrillic": "десно",
+    "ru_translation": "направо",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Skrenite desno na sledećoj raskrsnici.",
+    "example_ru": "Поверните направо на следующем перекрёстке.",
+    "audio_text": "desno",
+    "image": null
+  },
+  {
+    "id": "levo",
+    "sr_latin": "levo",
+    "sr_cyrillic": "лево",
+    "ru_translation": "налево",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Skrenite levo posle semafora.",
+    "example_ru": "Поверните налево после светофора.",
+    "audio_text": "levo",
+    "image": null
+  },
+  {
+    "id": "put",
+    "sr_latin": "put",
+    "sr_cyrillic": "пут",
+    "ru_translation": "дорога, путь (юридически — категория: публичная или некатегоризованная дорога, где происходит движение)",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Ovo je javni put.",
+    "example_ru": "Это дорога общего пользования.",
+    "audio_text": "put",
+    "image": null,
+    "source": {
+      "type": "law",
+      "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+      "article": "član 10, tačka 1",
+      "checked_at": "2026-09-06"
+    },
+    "status": "verified_official"
+  },
+  {
+    "id": "saobracaj",
+    "sr_latin": "saobraćaj",
+    "sr_cyrillic": "саобраћај",
+    "ru_translation": "дорожное движение",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Gust saobraćaj u gradu.",
+    "example_ru": "Плотное движение в городе.",
+    "audio_text": "saobraćaj",
+    "image": null
+  },
+  {
+    "id": "znak",
+    "sr_latin": "znak",
+    "sr_cyrillic": "знак",
+    "ru_translation": "знак",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Poštujte saobraćajni znak.",
+    "example_ru": "Соблюдайте дорожный знак.",
+    "audio_text": "znak",
+    "image": null
+  },
+  {
+    "id": "raskrsnica",
+    "sr_latin": "raskrsnica",
+    "sr_cyrillic": "раскрсница",
+    "ru_translation": "перекрёсток",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Zaustavite se pre raskrsnice.",
+    "example_ru": "Остановитесь перед перекрёстком.",
+    "audio_text": "raskrsnica",
+    "image": null,
+    "source": {
+      "type": "law",
+      "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+      "article": "član 10, tačka 24",
+      "checked_at": "2026-09-06"
+    },
+    "status": "verified_official"
+  },
+  {
+    "id": "brzina",
+    "sr_latin": "brzina",
+    "sr_cyrillic": "брзина",
+    "ru_translation": "скорость",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Ograničenje brzine je 50 km/h.",
+    "example_ru": "Ограничение скорости — 50 км/ч.",
+    "audio_text": "brzina",
+    "image": null
+  },
+  {
+    "id": "kolovoz",
+    "sr_latin": "kolovoz",
+    "sr_cyrillic": "коловоз",
+    "ru_translation": "проезжая часть",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Ne zaustavljajte se na kolovozu.",
+    "example_ru": "Не останавливайтесь на проезжей части.",
+    "audio_text": "kolovoz",
+    "image": null,
+    "source": {
+      "type": "law",
+      "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+      "article": "član 10, tačka 11",
+      "checked_at": "2026-09-06"
+    },
+    "status": "verified_official"
+  },
+  {
+    "id": "traka",
+    "sr_latin": "traka",
+    "sr_cyrillic": "трака",
+    "ru_translation": "полоса движения",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Vozite u desnoj traci.",
+    "example_ru": "Едьте по правой полосе.",
+    "audio_text": "traka",
+    "image": null,
+    "source": {
+      "type": "law",
+      "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+      "article": "član 10, tačka 17",
+      "checked_at": "2026-09-06"
+    },
+    "status": "verified_official"
+  },
+  {
+    "id": "obavezno",
+    "sr_latin": "obavezno",
+    "sr_cyrillic": "обавезно",
+    "ru_translation": "обязательно",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Obavezno vezivanje sigurnosnog pojasa.",
+    "example_ru": "Обязательное пристёгивание ремня безопасности.",
+    "audio_text": "obavezno",
+    "image": null
+  },
+  {
+    "id": "zabranjeno",
+    "sr_latin": "zabranjeno",
+    "sr_cyrillic": "забрањено",
+    "ru_translation": "запрещено",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Zabranjeno je parkiranje.",
+    "example_ru": "Парковка запрещена.",
+    "audio_text": "zabranjeno",
+    "image": null
+  },
+  {
+    "id": "dozvoljeno",
+    "sr_latin": "dozvoljeno",
+    "sr_cyrillic": "дозвољено",
+    "ru_translation": "разрешено",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Ovde je dozvoljeno preticanje.",
+    "example_ru": "Здесь разрешён обгон.",
+    "audio_text": "dozvoljeno",
+    "image": null
+  },
+  {
+    "id": "semafor",
+    "sr_latin": "semafor",
+    "sr_cyrillic": "семафор",
+    "ru_translation": "светофор",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Semafor je crven, zaustavite se.",
+    "example_ru": "Светофор красный, остановитесь.",
+    "audio_text": "semafor",
+    "image": null
+  },
+  {
+    "id": "ulica",
+    "sr_latin": "ulica",
+    "sr_cyrillic": "улица",
+    "ru_translation": "улица",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Ova ulica je jednosmerna.",
+    "example_ru": "Эта улица односторонняя.",
+    "audio_text": "ulica",
+    "image": null
+  },
+  {
+    "id": "grad",
+    "sr_latin": "grad",
+    "sr_cyrillic": "град",
+    "ru_translation": "город",
+    "tier": "frequency",
+    "topic": "osnovna-leksika",
+    "example_sr": "Vozite pažljivo u gradu.",
+    "example_ru": "Ведите машину осторожно в городе.",
+    "audio_text": "grad",
+    "image": null
+  }
+]

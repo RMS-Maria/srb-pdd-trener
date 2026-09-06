@@ -1,0 +1,412 @@
+/*
+  Цветовая система намеренно повторяет смысл сигналов на дороге, которые пользователь
+  и так учит: зелёный — «можно/верно», жёлтый — «внимание», красный — «нельзя/ошибка»,
+  синий — нейтральная информация. Это снижает когнитивную нагрузку: не нужно запоминать
+  отдельный "язык" интерфейса поверх языка ПДД.
+*/
+:root {
+  --bg: #f7f7f5;
+  --bg-elevated: #ffffff;
+  --text: #1c1c1e;
+  --text-muted: #5c5c62;
+  --border: #e2e2e0;
+
+  --accent: #1e6b52;
+  --accent-bg: #e6f2ec;
+  --accent-contrast: #ffffff;
+
+  --danger: #a3271f;
+  --danger-bg: #fdecea;
+
+  --warning: #8a5a00;
+  --warning-bg: #fff2d9;
+
+  --info: #1d5b8f;
+  --info-bg: #e8f1fa;
+
+  color-scheme: light;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root[data-theme='dark'] {
+  --bg: #15161a;
+  --bg-elevated: #1f2024;
+  --text: #eaeaec;
+  --text-muted: #a7a7ad;
+  --border: #303136;
+
+  --accent: #4fb992;
+  --accent-bg: #16302a;
+  --accent-contrast: #0c1210;
+
+  --danger: #ff8078;
+  --danger-bg: #3a1f1d;
+
+  --warning: #ffcc66;
+  --warning-bg: #3a2f14;
+
+  --info: #7cc0f5;
+  --info-bg: #17293a;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent);
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.top-bar__title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.top-bar__controls {
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* Тап-зоны кнопок-иконок сделаны от 44x44px (правило Fitts's law / рекомендация Apple HIG
+   для целей на мобильном) — меньше промахов пальцем, меньше раздражения при подготовке к экзамену. */
+.icon-toggle {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.4rem 0.7rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.bottom-nav {
+  display: flex;
+  border-top: 1px solid var(--border);
+  background: var(--bg-elevated);
+  position: sticky;
+  bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Основная навигация — внизу, в зоне большого пальца: самое частое действие должно
+   требовать наименьшего движения руки на телефоне. */
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  padding: 0.7rem 0.25rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  min-height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.bottom-nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.term-inline {
+  background: none;
+  border: none;
+  border-bottom: 1px dashed var(--accent);
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.term-inline__reveal {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-top: 0.35rem;
+}
+
+/* Жёлтый = «внимание», а не «ошибка» — резервируем красный только для действительно
+   неверных ответов/запретов, чтобы не пугать пользователя лишний раз. */
+.status-chip {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.4rem;
+}
+
+.status-chip--verified {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.status-chip--review {
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+.trap-badge {
+  display: inline-block;
+  background: var(--warning-bg);
+  color: var(--warning);
+  border-radius: 6px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Пояснение ловушки — самая важная часть карточки, поэтому оформлено как выделенный
+   блок, а не как второстепенный серый текст (иначе главное визуально прячется). */
+.callout {
+  border-left: 3px solid var(--border);
+  background: var(--bg);
+  border-radius: 0 8px 8px 0;
+  padding: 0.6rem 0.75rem;
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+  text-align: left;
+}
+
+.callout-warning {
+  border-left-color: var(--warning);
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.callout-info {
+  border-left-color: var(--info);
+}
+
+.callout-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  color: var(--info);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0;
+  min-height: 44px;
+  text-align: left;
+}
+
+.theory-diagram {
+  font-family: 'SF Mono', 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  overflow-x: auto;
+  margin: 0.6rem 0;
+}
+
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.alphabet-grid__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.alphabet-grid__letter {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--info);
+}
+
+.flashcard {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.flashcard__image {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.flashcard__word {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.flashcard__answers {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+
+.btn {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  flex: 1;
+  min-height: 44px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 600;
+}
+
+/* Порядок кнопок «не вспомнил / вспомнил» намеренно такой: отрицательный вариант
+   слева, положительный справа — совпадает с направлением чтения и с тем, что
+   в большинстве культур «да»/движение вперёд ассоциируется с правой стороной. */
+.btn-wrong {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.btn-correct {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-bg);
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.search-input,
+.text-input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-size: 1rem;
+  min-height: 44px;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0;
+}
+
+.chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  min-height: 36px;
+}
+
+.chip.active {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (min-width: 720px) {
+  .app-main {
+    padding: 1.5rem;
+  }
+}
