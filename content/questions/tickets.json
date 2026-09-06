@@ -1,0 +1,221 @@
+[
+  {
+    "id": "q01",
+    "topic": "opsti-pojmovi",
+    "question": "Ko ima prvenstvo prolaza kada raskrsnica nije regulisana znacima ni semaforom?",
+    "question_translation": "У кого преимущество проезда, если перекрёсток не регулируется знаками и светофором?",
+    "options": ["Vozilo koje dolazi sa desne strane", "Vozilo koje dolazi sa leve strane", "Vozilo koje je brže", "Vozilo koje je veće"],
+    "correct_index": 0,
+    "answer": "vozilo sa desne strane",
+    "explanation": "Правило правой стороны действует ТОЛЬКО когда нет знаков/светофора.",
+    "source": { "type": "law", "document": "Zakon o osnovama bezbednosti saobraćaja na putevima", "article": "član 47, stav 3", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q02",
+    "topic": "ucesnici-u-saobracaju",
+    "question": "Šta je vozač dužan da uradi kada prilazi pešačkom prelazu?",
+    "question_translation": "Что водитель обязан сделать, приближаясь к пешеходному переходу?",
+    "options": ["Poveća brzinu", "Prilagodi brzinu tako da može bezbedno da se zaustavi", "Uključi sirenu", "Skrene sa puta"],
+    "correct_index": 1,
+    "answer": "prilagodi brzinu",
+    "explanation": "Проверенное правило — заранее скорректировать скорость, а не «пешеход всегда главный».",
+    "source": { "type": "law", "document": "Zakon o osnovama bezbednosti saobraćaja na putevima", "article": "član 23", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q03",
+    "topic": "vertikalna-signalizacija",
+    "question": "Koliko osnovnih grupa saobraćajnih znakova postoji po Pravilniku?",
+    "question_translation": "Сколько основных групп дорожных знаков по Правилнику?",
+    "options": ["Dve", "Tri", "Četiri", "Pet"],
+    "correct_index": 1,
+    "answer": "tri",
+    "explanation": "Знаки опасности, предписания и информационные — три группы, не четыре.",
+    "source": { "type": "regulation", "document": "Pravilnik o saobraćajnoj signalizaciji", "article": "član 6", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q04",
+    "topic": "vertikalna-signalizacija",
+    "question": "Da li je „znak zabrane“ posebna, nezavisna grupa saobraćajnih znakova?",
+    "question_translation": "Является ли «знак запрета» отдельной, независимой группой знаков?",
+    "options": ["Da, to je četvrta grupa", "Ne, to je podtip znakova izričitih naredbi", "Ne postoji takav znak", "Da, ali samo van naselja"],
+    "correct_index": 1,
+    "answer": "ne podtip je",
+    "explanation": "Запрещающий знак — подтип «znakovi izričitih naredbi», не отдельная группа.",
+    "source": { "type": "regulation", "document": "Pravilnik o saobraćajnoj signalizaciji", "article": "član 24", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q05",
+    "topic": "ispitna-gramatika",
+    "question": "Šta znači kada je vozač „dužan da“ nešto uradi?",
+    "question_translation": "Что значит, когда водитель «dužan da» что-то сделать?",
+    "options": ["Obavezan je", "Zabranjeno mu je", "Sme, ali ne mora", "Preporučuje se"],
+    "correct_index": 0,
+    "answer": "obavezan",
+    "explanation": "«Dužan je da» = обязан, строгое предписание.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q06",
+    "topic": "ispitna-gramatika",
+    "question": "Šta znači „ne sme da“?",
+    "question_translation": "Что значит «ne sme da»?",
+    "options": ["Obavezno je", "Zabranjeno je", "Dozvoljeno je", "Preporučeno je"],
+    "correct_index": 1,
+    "answer": "zabranjeno",
+    "explanation": "«Ne sme da + глагол» = запрещено, читайте целиком.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q07",
+    "topic": "ispitna-gramatika",
+    "question": "Rečenica „Nije dozvoljeno preticanje“ znači:",
+    "question_translation": "Что означает фраза «Nije dozvoljeno preticanje»?",
+    "options": ["Obgon je dozvoljen", "Obgon je zabranjen", "Obgon je obavezan", "Obgon zavisi od vozača"],
+    "correct_index": 1,
+    "answer": "zabranjen je",
+    "explanation": "«Nije» + «dozvoljeno» вместе = запрещено — не разбивайте на слова по отдельности.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q08",
+    "topic": "ispitna-gramatika",
+    "question": "Znak „najviše 50 km/h“ znači:",
+    "question_translation": "Что значит знак «najviše 50 km/h»?",
+    "options": ["Tačno 50 km/h, ni manje ni više", "Ne sme se ići brže od 50 km/h", "Ne sme se ići sporije od 50 km/h", "Preporučena brzina 50 km/h"],
+    "correct_index": 1,
+    "answer": "ne brze od 50",
+    "explanation": "«Najviše» = не более. «Najmanje» означало бы противоположное.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q09",
+    "topic": "ispitna-gramatika",
+    "question": "Reč „najmanje“ u pravilima znači:",
+    "question_translation": "Что означает слово «najmanje» в правилах?",
+    "options": ["Ne manje od navedenog", "Ne više od navedenog", "Tačno navedeno", "Približno navedeno"],
+    "correct_index": 0,
+    "answer": "ne manje od",
+    "explanation": "«Najmanje» и «najviše» отличаются одним слогом — частая ловушка при беглом чтении.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q10",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "Šta na ruskom znači srpska reč „autobuska stanica“?",
+    "options": ["То же самое, что «остановка»", "Автовокзал/автостанция (с продажей билетов)", "Разновидность дорожного знака", "Часть велодорожки"],
+    "correct_index": 1,
+    "answer": "автовокзал",
+    "explanation": "«Stanica» ≠ «остановка». Это объект с приёмом/отправлением автобусов и продажей билетов.",
+    "source": { "type": "law", "document": "Zakon o prevozu u drumskom saobraćaju", "article": "član 2, tačka 7", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q11",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "Šta na ruskom znači srpska reč „autobusko stajalište“?",
+    "options": ["Автовокзал с кассами", "Обычная автобусная остановка на дороге", "Парковка для грузовиков", "Название перекрёстка"],
+    "correct_index": 1,
+    "answer": "автобусная остановка",
+    "explanation": "Именно «stajalište» — это то, что по-русски вы назвали бы «остановка».",
+    "source": { "type": "law", "document": "Zakon o prevozu u drumskom saobraćaju", "article": "član 2, tačka 8", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  },
+  {
+    "id": "q12",
+    "topic": "napravci-i-manevri",
+    "question": "U rečenici „Vozite pravo do sledeće raskrsnice“, reč „pravo“ znači:",
+    "question_translation": "Во фразе «Vozite pravo do sledeće raskrsnice», что значит «pravo»?",
+    "options": ["Skrenite desno", "Nastavite u istom smeru, ne skrećite", "Skrenite levo", "Zaustavite se odmah"],
+    "correct_index": 1,
+    "answer": "nastavite pravo",
+    "explanation": "Флагманская ловушка: «pravo» = прямо, а не «направо».",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q13",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "Šta na ruskom znači srpska reč „desno“?",
+    "options": ["прямо", "направо", "налево", "назад"],
+    "correct_index": 1,
+    "answer": "направо",
+    "explanation": "«Desno» = направо. «Pravo» (прямо) — совсем другое слово, легко перепутать.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q14",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "Šta na ruskom znači srpska reč „iskustvo“?",
+    "options": ["искусство", "опыт", "искушение", "исправность"],
+    "correct_index": 1,
+    "answer": "опыт",
+    "explanation": "Ложный друг: похоже на «искусство», но означает «опыт».",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q15",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "Šta na ruskom znači srpska reč „kazna“ u frazi „novčana kazna“?",
+    "options": ["казна (государственные деньги)", "штраф", "премия", "залог"],
+    "correct_index": 1,
+    "answer": "штраф",
+    "explanation": "«Kazna» = наказание/штраф, а не русское «казна».",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q16",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "Šta na ruskom znači razgovorna srpska reč „kola“?",
+    "options": ["напиток «кола»", "машина/автомобиль", "телега (историческое)", "колесо"],
+    "correct_index": 1,
+    "answer": "машина",
+    "explanation": "В разговорном сербском «kola» — обычное слово для «машина».",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q17",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "Šta na ruskom znači srpska reč „isprava“ (npr. vozačka dozvola)?",
+    "options": ["исправность (в рабочем состоянии)", "документ/удостоверение", "исправление ошибки", "проверка техосмотра"],
+    "correct_index": 1,
+    "answer": "документ",
+    "explanation": "«Isprava» = официальный документ/удостоверение, «vozačka dozvola» — один из его видов.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q18",
+    "topic": "zamke-laznih-prijatelja",
+    "question": "U frazi „vremenski uslovi“, šta znači „vreme“?",
+    "options": ["только время", "погода", "скорость", "расписание"],
+    "correct_index": 1,
+    "answer": "погода",
+    "explanation": "«Vreme» многозначно: и «время», и «погода». В «vremenski uslovi» — именно погода.",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q19",
+    "topic": "ispitna-gramatika",
+    "question": "Šta znači „može da“ za razliku od „mora da“?",
+    "question_translation": "Чем «može da» отличается от «mora da»?",
+    "options": ["Isto što i mora — obavezno", "Dozvoljeno, ali nije obavezno", "Zabranjeno", "Nema razlike"],
+    "correct_index": 1,
+    "answer": "razresno ali nije obavezno",
+    "explanation": "«Može» — разрешено, но необязательно, в отличие от жёсткого «mora».",
+    "status": "verified_lexical"
+  },
+  {
+    "id": "q20",
+    "topic": "opsti-pojmovi",
+    "question": "Šta je „kolovoz“ po zakonu?",
+    "question_translation": "Что такое «kolovoz» по закону?",
+    "options": ["Deo puta namenjen prvenstveno saobraćaju vozila", "Deo puta namenjen isključivo pešacima", "Naziv za ceo put", "Vrsta saobraćajnog znaka"],
+    "correct_index": 0,
+    "answer": "deo puta za vozila",
+    "explanation": "Проезжая часть — часть дороги, предназначенная в первую очередь для транспорта.",
+    "source": { "type": "law", "document": "Zakon o osnovama bezbednosti saobraćaja na putevima", "article": "član 10, tačka 11", "checked_at": "2026-09-06" },
+    "status": "verified_official"
+  }
+]

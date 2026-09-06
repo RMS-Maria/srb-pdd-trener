@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom'
 
 const links = [
-  { to: '/', label: 'Теория', end: true },
-  { to: '/glossary', label: 'Словарь' },
-  { to: '/flashcards', label: 'Карточки' },
-  { to: '/profile', label: 'Профиль' },
+  { to: '/', label: 'Теория', icon: '📘', end: true },
+  { to: '/glossary', label: 'Словарь', icon: '📚' },
+  { to: '/flashcards', label: 'Карточки', icon: '🎴' },
+  { to: '/tickets', label: 'Билеты', icon: '🎫' },
+  { to: '/profile', label: 'Профиль', icon: '👤' },
 ]
 
 export function Nav() {
@@ -17,6 +18,7 @@ export function Nav() {
           end={l.end}
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
+          <span className="nav-icon">{l.icon}</span>
           {l.label}
         </NavLink>
       ))}

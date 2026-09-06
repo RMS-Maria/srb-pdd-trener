@@ -5,41 +5,51 @@
   отдельный "язык" интерфейса поверх языка ПДД.
 */
 :root {
-  --bg: #f7f7f5;
+  --bg: #f5f4fb;
   --bg-elevated: #ffffff;
-  --text: #1c1c1e;
-  --text-muted: #5c5c62;
-  --border: #e2e2e0;
+  --text: #201c2e;
+  --text-muted: #635f75;
+  --border: #e5e1f2;
 
-  --accent: #1e6b52;
-  --accent-bg: #e6f2ec;
+  --accent: #1e8f6b;
+  --accent-bg: #e2f5ec;
   --accent-contrast: #ffffff;
 
-  --danger: #a3271f;
+  --danger: #d43d3d;
   --danger-bg: #fdecea;
 
-  --warning: #8a5a00;
+  --warning: #b8720a;
   --warning-bg: #fff2d9;
 
-  --info: #1d5b8f;
+  --info: #1d6fbf;
   --info-bg: #e8f1fa;
+
+  /* Фирменный акцент — для навигации/заголовков/декора. Отдельно от семантических
+     цветов обратной связи (accent/danger/warning/info), чтобы не путать «бренд» с «верно/неверно». */
+  --brand: #7c3aed;
+  --brand-2: #ec4899;
+  --brand-bg: #f2e9fe;
+  --brand-contrast: #ffffff;
+
+  --shadow-sm: 0 1px 3px rgba(32, 28, 46, 0.06);
+  --shadow-md: 0 6px 20px rgba(32, 28, 46, 0.09);
 
   color-scheme: light;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 :root[data-theme='dark'] {
-  --bg: #15161a;
-  --bg-elevated: #1f2024;
-  --text: #eaeaec;
-  --text-muted: #a7a7ad;
-  --border: #303136;
+  --bg: #16151d;
+  --bg-elevated: #221f2d;
+  --text: #f0eef7;
+  --text-muted: #ada8bd;
+  --border: #33304199;
 
-  --accent: #4fb992;
-  --accent-bg: #16302a;
+  --accent: #4fd9a8;
+  --accent-bg: #16342a;
   --accent-contrast: #0c1210;
 
-  --danger: #ff8078;
+  --danger: #ff7a7a;
   --danger-bg: #3a1f1d;
 
   --warning: #ffcc66;
@@ -47,6 +57,14 @@
 
   --info: #7cc0f5;
   --info-bg: #17293a;
+
+  --brand: #b794f6;
+  --brand-2: #f472b6;
+  --brand-bg: #2c2140;
+  --brand-contrast: #17111f;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
 
   color-scheme: dark;
 }
@@ -95,17 +113,19 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding: 0.6rem 1rem;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg-elevated);
+  padding: 0.75rem 1rem;
+  background: linear-gradient(120deg, var(--brand), var(--brand-2));
   position: sticky;
   top: 0;
   z-index: 5;
+  box-shadow: var(--shadow-sm);
 }
 
 .top-bar__title {
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--brand-contrast);
+  letter-spacing: 0.01em;
 }
 
 .top-bar__controls {
@@ -128,6 +148,18 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
+  transition: transform 0.1s ease;
+}
+
+.icon-toggle:active {
+  transform: scale(0.94);
+}
+
+.icon-toggle--on-brand {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--brand-contrast);
+  backdrop-filter: blur(2px);
 }
 
 .bottom-nav {
@@ -156,17 +188,35 @@ a {
   gap: 0.15rem;
 }
 
+.bottom-nav a .nav-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 .bottom-nav a.active {
-  color: var(--accent);
-  font-weight: 600;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.bottom-nav a.active .nav-icon {
+  transform: scale(1.15);
 }
 
 .card {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.1rem;
+  border-radius: 18px;
+  padding: 1.15rem;
   margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
 }
 
 .term-inline {
@@ -287,6 +337,48 @@ a {
   color: var(--info);
 }
 
+.ticket__question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.ticket__options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ticket-option {
+  text-align: left;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.95rem;
+  min-height: 44px;
+  transition: transform 0.1s ease;
+}
+
+.ticket-option:active {
+  transform: scale(0.98);
+}
+
+.ticket-option--correct {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.ticket-option--wrong {
+  border-color: var(--danger);
+  background: var(--danger-bg);
+  color: var(--danger);
+  font-weight: 700;
+}
+
 .flashcard {
   min-height: 220px;
   display: flex;
@@ -334,18 +426,24 @@ a {
   border: 1px solid var(--border);
   background: var(--bg-elevated);
   color: var(--text);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 0.65rem 1rem;
   font-size: 0.95rem;
   flex: 1;
   min-height: 44px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
 }
 
 .btn-primary {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: linear-gradient(120deg, var(--accent), #17b88a);
+  border-color: transparent;
   color: var(--accent-contrast);
-  font-weight: 600;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
 }
 
 /* Порядок кнопок «не вспомнил / вспомнил» намеренно такой: отрицательный вариант
@@ -396,13 +494,19 @@ a {
   background: var(--bg-elevated);
   color: var(--text-muted);
   min-height: 36px;
+  transition: transform 0.1s ease;
+}
+
+.chip:active {
+  transform: scale(0.96);
 }
 
 .chip.active {
-  border-color: var(--accent);
-  background: var(--accent-bg);
-  color: var(--accent);
-  font-weight: 600;
+  border-color: transparent;
+  background: linear-gradient(120deg, var(--brand), var(--brand-2));
+  color: var(--brand-contrast);
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
 }
 
 @media (min-width: 720px) {

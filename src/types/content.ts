@@ -87,6 +87,20 @@ export interface TheoryTopic {
   sections: TheorySection[]
 }
 
+export interface TicketQuestion {
+  id: string
+  topic: string
+  question: string
+  question_translation?: string
+  options: string[]
+  correct_index: number
+  /** Канонический ответ для режима «напечатать» — сравнивается мягко (без диакритики, кириллица тоже принимается). */
+  answer: string
+  explanation: string
+  source?: Source
+  status?: ContentStatus
+}
+
 export interface AlphabetLetter {
   letter: string
   cyrillic: string

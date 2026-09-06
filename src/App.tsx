@@ -5,6 +5,7 @@ import { ThemeToggle } from './components/ThemeToggle'
 import { Theory } from './pages/Theory'
 import { Glossary } from './pages/Glossary'
 import { Flashcards } from './pages/Flashcards'
+import { Tickets } from './pages/Tickets'
 import { Profile } from './pages/Profile'
 
 export function App() {
@@ -23,6 +24,7 @@ export function App() {
           <Route path="/" element={<Theory />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/flashcards" element={<Flashcards />} />
+          <Route path="/tickets" element={<Tickets />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
