@@ -5,87 +5,89 @@
   отдельный "язык" интерфейса поверх языка ПДД.
 */
 :root {
-  --bg: #f5f4fb;
-  --bg-elevated: #ffffff;
-  --text: #201c2e;
-  --text-muted: #635f75;
-  --border: #e5e1f2;
+  --bg: #f5f0e4;
+  --bg-elevated: #fffcf5;
+  --text: #362f22;
+  --text-muted: #8a7f68;
+  --border: #e6dcc4;
 
-  --accent: #1e8f6b;
-  --accent-bg: #e2f5ec;
+  /* Салатовый — спокойный, приглушённый, не кислотный. Основной семантический
+     «верно/можно», как и раньше, просто теперь тёплого оттенка. */
+  --accent: #7c9a4e;
+  --accent-bg: #eaf1de;
   --accent-contrast: #ffffff;
 
-  --danger: #d43d3d;
-  --danger-bg: #fdecea;
+  --danger: #b6524a;
+  --danger-bg: #f6e6e3;
 
-  --warning: #b8720a;
-  --warning-bg: #fff2d9;
+  --warning: #a9762e;
+  --warning-bg: #f5ecd7;
 
-  --info: #1d6fbf;
-  --info-bg: #e8f1fa;
+  --info: #4d6f8f;
+  --info-bg: #e6edf1;
 
   /* Нейтральный фирменный акцент — используется только там, где нет цвета конкретной
      вкладки (см. --tab-* ниже). Спокойный, не кричащий. */
-  --brand: #5b5a78;
-  --brand-2: #6b6a8c;
-  --brand-bg: #ecebf5;
+  --brand: #8a7a5c;
+  --brand-2: #9c8c6c;
+  --brand-bg: #efe7d6;
   --brand-contrast: #ffffff;
 
-  /* У каждой вкладки — свой приглушённый цвет. Используется в сайдбаре, в шапке
-     текущей вкладки и в активных чипах внутри неё — по всему разделу один и тот же тон. */
-  --tab-theory: #4f7396;
-  --tab-theory-bg: #e6edf4;
-  --tab-glossary: #46876f;
-  --tab-glossary-bg: #e4f0ec;
-  --tab-flashcards: #a8752f;
-  --tab-flashcards-bg: #f5ead9;
-  --tab-tickets: #7a5ea3;
-  --tab-tickets-bg: #ece6f5;
-  --tab-profile: #a05a72;
-  --tab-profile-bg: #f5e6ec;
+  /* У каждой вкладки — свой приглушённый цвет в тон бежевой палитре. Используется
+     в сайдбаре, в шапке текущей вкладки и в активных чипах внутри неё. */
+  --tab-theory: #6c8aa0;
+  --tab-theory-bg: #e6edf0;
+  --tab-glossary: #7c9a4e;
+  --tab-glossary-bg: #eaf1de;
+  --tab-flashcards: #b3714a;
+  --tab-flashcards-bg: #f5e7da;
+  --tab-tickets: #8a708f;
+  --tab-tickets-bg: #ede6ee;
+  --tab-profile: #a3705f;
+  --tab-profile-bg: #f3e6df;
 
-  --shadow-sm: 0 1px 3px rgba(32, 28, 46, 0.06);
-  --shadow-md: 0 6px 20px rgba(32, 28, 46, 0.09);
+  --shadow-sm: 0 1px 3px rgba(54, 47, 34, 0.08);
+  --shadow-md: 0 6px 20px rgba(54, 47, 34, 0.1);
 
   color-scheme: light;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 :root[data-theme='dark'] {
-  --bg: #16151d;
-  --bg-elevated: #221f2d;
-  --text: #f0eef7;
-  --text-muted: #ada8bd;
-  --border: #33304199;
+  --bg: #221d16;
+  --bg-elevated: #2c2620;
+  --text: #f2ead9;
+  --text-muted: #b8ab8e;
+  --border: #4a4030;
 
-  --accent: #4fd9a8;
-  --accent-bg: #16342a;
-  --accent-contrast: #0c1210;
+  --accent: #a8c47a;
+  --accent-bg: #333f24;
+  --accent-contrast: #1a2412;
 
-  --danger: #ff7a7a;
-  --danger-bg: #3a1f1d;
+  --danger: #e0897f;
+  --danger-bg: #402420;
 
-  --warning: #ffcc66;
-  --warning-bg: #3a2f14;
+  --warning: #dcb367;
+  --warning-bg: #3d3218;
 
-  --info: #7cc0f5;
-  --info-bg: #17293a;
+  --info: #90b0cf;
+  --info-bg: #222f3c;
 
-  --brand: #9695b8;
-  --brand-2: #a3a2c2;
-  --brand-bg: #26243a;
-  --brand-contrast: #17111f;
+  --brand: #c9b78f;
+  --brand-2: #d6c6a2;
+  --brand-bg: #3a3324;
+  --brand-contrast: #221d16;
 
-  --tab-theory: #8fb0d3;
-  --tab-theory-bg: #223142;
-  --tab-glossary: #7ec0a6;
-  --tab-glossary-bg: #1e3129;
-  --tab-flashcards: #d9a760;
-  --tab-flashcards-bg: #392e18;
-  --tab-tickets: #b49bd6;
-  --tab-tickets-bg: #2b2438;
-  --tab-profile: #d494a8;
-  --tab-profile-bg: #372329;
+  --tab-theory: #9ab4c5;
+  --tab-theory-bg: #263440;
+  --tab-glossary: #a8c47a;
+  --tab-glossary-bg: #2e3a24;
+  --tab-flashcards: #d99a6e;
+  --tab-flashcards-bg: #3c2c1e;
+  --tab-tickets: #b7a2bc;
+  --tab-tickets-bg: #332a38;
+  --tab-profile: #cf9a8a;
+  --tab-profile-bg: #3a2820;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -490,7 +492,7 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(120deg, var(--accent), #17b88a);
+  background: linear-gradient(120deg, var(--accent), #9ab569);
   border-color: transparent;
   color: var(--accent-contrast);
   font-weight: 700;
@@ -569,7 +571,7 @@ a {
 /* В тёмной теме tab-цвета и brand — светлые пастельные оттенки, рассчитанные на текст
    на тёмном фоне, поэтому в заливке чипа их надо сочетать с тёмным текстом, не с белым. */
 :root[data-theme='dark'] .chip.active {
-  color: #17111f;
+  color: #221d16;
 }
 
 @media (min-width: 720px) {
