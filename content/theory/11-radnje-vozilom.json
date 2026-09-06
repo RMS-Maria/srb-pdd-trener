@@ -1,0 +1,19 @@
+{
+  "id": "radnje-vozilom",
+  "order": 11,
+  "title_sr": "Radnje upravljanja vozilom",
+  "title_ru": "Действия при управлении транспортным средством",
+  "sections": [
+    {
+      "heading": "Общая последовательность действий (педагогическое изложение)",
+      "body_sr": "Uobičajen redosled radnji: proveriti retrovizore i pojas, pokrenuti motor, osloboditi ručnu kočnicu, uključiti brzinu preko kvačila, postepeno otpustiti kvačilo uz laganо ubrzanje, tokom vožnje pravovremeno menjati brzine i koristiti kočnicu postepeno, ne naglo.",
+      "body_ru": "Обычная последовательность действий: проверить зеркала и ремень, завести двигатель, отпустить ручной тормоз, включить передачу через сцепление, плавно отпустить сцепление с лёгким ускорением, во время движения своевременно переключать передачи и тормозить постепенно, не резко. Этот раздел — общее педагогическое описание техники вождения, не цитата конкретной статьи закона.",
+      "terms": [
+        { "sr_latin": "kvačilo", "sr_cyrillic": "квачило", "ru_translation": "сцепление", "glossary_id": "kvacilo" },
+        { "sr_latin": "kočnica", "sr_cyrillic": "кочница", "ru_translation": "тормоз", "glossary_id": "kocnica" },
+        { "sr_latin": "menjač", "sr_cyrillic": "мењач", "ru_translation": "коробка передач", "glossary_id": "menjac" }
+      ],
+      "status": "pedagogical"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "vozilo-tehnicka-ispravnost",
+  "order": 5,
+  "title_sr": "Vozilo — tehnička ispravnost i oprema",
+  "title_ru": "Транспортное средство — техническая исправность и оснащение",
+  "sections": [
+    {
+      "heading": "Обязанность технической исправности",
+      "body_sr": "Vlasnik, odnosno korisnik vozila dužan je da vozilo u saobraćaju na putevima bude tehnički ispravno i da ispunjava druge propisane uslove.",
+      "body_ru": "Владелец/пользователь транспортного средства обязан обеспечить, чтобы оно было технически исправным и отвечало другим установленным условиям при участии в движении.",
+      "terms": [],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 5",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Знак аварийной остановки (трёхугольник)",
+      "body_sr": "Vozač je dužan da vozilo koje je zaustavljeno na kolovozu obeleži sigurnosnim trouglom — najmanje 50 m iza vozila van naselja, odnosno 10 m u naselju.",
+      "body_ru": "Водитель обязан обозначить остановившееся на проезжей части транспортное средство знаком аварийной остановки — не менее 50 м позади машины вне населённого пункта, и 10 м — в населённом пункте.",
+      "terms": [
+        { "sr_latin": "sigurnosni trougao", "sr_cyrillic": "сигурносни троугао", "ru_translation": "знак аварийной остановки" }
+      ],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 67",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Светоотражающий жилет",
+      "body_sr": "U putničkom, teretnom vozilu i autobusu mora se nalaziti odgovarajući svetloodbojni prsluk. Ako se vozač ili putnici nalaze na kolovozu van naselja, dužni su da nose taj prsluk.",
+      "body_ru": "В легковом, грузовом транспортном средстве и автобусе обязательно должен быть светоотражающий жилет. Если водитель или пассажиры находятся на проезжей части вне населённого пункта, они обязаны надеть этот жилет.",
+      "terms": [],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 30, član 67",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    }
+  ]
+}

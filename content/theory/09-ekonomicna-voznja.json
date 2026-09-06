@@ -1,0 +1,18 @@
+{
+  "id": "ekonomicna-voznja",
+  "order": 9,
+  "title_sr": "Osnove ekonomične i ekološke vožnje",
+  "title_ru": "Основы экономичного и экологичного вождения",
+  "sections": [
+    {
+      "heading": "Общие принципы (педагогическое изложение)",
+      "body_sr": "Ekonomična vožnja podrazumeva: postepeno ubrzavanje, blagovremeno menjanje brzina, izbegavanje naglog kočenja, održavanje pravilnog pritiska u gumama i izbegavanje nepotrebnog rada motora u mestu (praznog hoda).",
+      "body_ru": "Экономичное вождение подразумевает: плавное ускорение, своевременное переключение передач, избегание резкого торможения, поддержание правильного давления в шинах и избегание ненужной работы двигателя на холостом ходу. Этот раздел носит общий, педагогический характер — здесь нет цитат из конкретной статьи закона, это общепринятые рекомендации по экономичному вождению.",
+      "terms": [
+        { "sr_latin": "postepeno", "sr_cyrillic": "постепено", "ru_translation": "постепенно" },
+        { "sr_latin": "naglo", "sr_cyrillic": "нагло", "ru_translation": "резко" }
+      ],
+      "status": "pedagogical"
+    }
+  ]
+}

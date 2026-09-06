@@ -1,0 +1,17 @@
+{
+  "id": "opasnosti-nepostovanja-pravila",
+  "order": 10,
+  "title_sr": "Opasnosti usled nepoštovanja pravila",
+  "title_ru": "Опасности, возникающие из-за несоблюдения правил",
+  "sections": [
+    {
+      "heading": "Почему одно нарушение редко бывает изолированным",
+      "body_sr": "Nepoštovanje jednog pravila (npr. brzine ili odstojanja) često smanjuje vreme za reagovanje i povećava težinu posledica u slučaju nezgode — efekat se sabira, a ne samo dodaje.",
+      "body_ru": "Несоблюдение одного правила (например, скорости или дистанции) часто одновременно уменьшает время на реакцию И увеличивает тяжесть последствий при ДТП — эффекты складываются, а не просто суммируются по отдельности. Точная система штрафных баллов/санкций (kazneni poeni) регулируется отдельным Pravilnik, который мы в этом разделе не проверяли — не привожу конкретные цифры санкций, чтобы не давать непроверенную информацию.",
+      "terms": [
+        { "sr_latin": "saobraćajna nezgoda", "sr_cyrillic": "саобраћајна незгода", "ru_translation": "ДТП", "glossary_id": "saobracajna-nezgoda" }
+      ],
+      "status": "pedagogical"
+    }
+  ]
+}

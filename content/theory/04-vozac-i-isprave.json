@@ -1,0 +1,24 @@
+{
+  "id": "vozac-i-isprave",
+  "order": 4,
+  "title_sr": "Vozač i isprave",
+  "title_ru": "Водитель и документы",
+  "sections": [
+    {
+      "heading": "Какие документы нужно возить с собой",
+      "body_sr": "Vozač mora imati kod sebe i na zahtev ovlašćenog lica pokazati vozačku dozvolu, saobraćajnu dozvolu vozila i drugu propisanu ispravu.",
+      "body_ru": "Водитель обязан иметь при себе и по требованию уполномоченного лица предъявить водительское удостоверение, свидетельство о регистрации транспортного средства и другие предписанные документы.",
+      "terms": [
+        { "sr_latin": "isprava", "sr_cyrillic": "исправа", "ru_translation": "документ, удостоверение", "glossary_id": "trap-isprava" }
+      ],
+      "status": "pedagogical"
+    },
+    {
+      "heading": "Минимальный возраст — уточняется",
+      "body_sr": "Za kategoriju B obično se navodi minimalni uzrast (u praksi — punoletstvo, 18 godina), ali tačan član zakona sa preciznom formulacijom još nismo direktno proverili u ovom konspektu.",
+      "body_ru": "Для категории B на практике обычно называют совершеннолетие (18 лет), но точную статью закона с формулировкой мы пока не проверили напрямую — не считайте эту цифру окончательной, перепроверьте у своей автошколы или в официальном Pravilnik o vozačkim dozvolama.",
+      "terms": [],
+      "status": "needs_review"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "pasivna-bezbednost",
+  "order": 6,
+  "title_sr": "Pasivna bezbednost",
+  "title_ru": "Пассивная безопасность",
+  "sections": [
+    {
+      "heading": "Ремень безопасности",
+      "body_sr": "Vozač i putnici koriste sigurnosni pojas na način koji je predvideo proizvođač vozila, za vreme vožnje.",
+      "body_ru": "Водитель и пассажиры обязаны использовать ремень безопасности так, как это предусмотрено производителем транспортного средства, во время движения.",
+      "terms": [
+        { "sr_latin": "sigurnosni pojas", "sr_cyrillic": "сигурносни појас", "ru_translation": "ремень безопасности", "glossary_id": "sigurnosni-pojas" }
+      ],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 30",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Детское кресло",
+      "body_sr": "Lice niže od 135 cm prevozi se vezano u odgovarajućem homologovanom bezbednosnom sedištu.",
+      "body_ru": "Лицо ростом ниже 135 см перевозится пристёгнутым в соответствующем сертифицированном детском автокресле.",
+      "terms": [],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 31",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Подушка безопасности",
+      "body_sr": "Vazdušni jastuk dopunjuje sigurnosni pojas i aktivira se pri jačem sudaru — ne zamenjuje pojas, već radi zajedno sa njim.",
+      "body_ru": "Подушка безопасности дополняет ремень безопасности и срабатывает при сильном столкновении — она не заменяет ремень, а работает вместе с ним. Это общее техническое знание, отдельно статью закона под эту конкретную формулировку мы не сверяли.",
+      "terms": [
+        { "sr_latin": "vazdušni jastuk", "sr_cyrillic": "ваздушни јастук", "ru_translation": "подушка безопасности", "glossary_id": "vazdusni-jastuk" }
+      ],
+      "status": "pedagogical"
+    }
+  ]
+}

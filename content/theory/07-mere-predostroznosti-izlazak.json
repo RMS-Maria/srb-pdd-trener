@@ -1,0 +1,34 @@
+{
+  "id": "mere-predostroznosti-izlazak",
+  "order": 7,
+  "title_sr": "Mere predostrožnosti pri izlasku iz vozila",
+  "title_ru": "Меры предосторожности при выходе из транспортного средства",
+  "sections": [
+    {
+      "heading": "Нельзя открывать дверь, если это создаёт помеху",
+      "body_sr": "Na zaustavljenom ili parkiranom vozilu ne smeju da se otvaraju vrata, ako se time ometa kretanje drugih učesnika u saobraćaju ili ugrožava bezbednost saobraćaja.",
+      "body_ru": "На остановленном или припаркованном транспортном средстве нельзя открывать двери, если это создаёт помеху движению других участников или ставит под угрозу безопасность движения. На практике: перед открытием двери со стороны движения — посмотрите назад/в зеркало.",
+      "terms": [],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 65, stav 2",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    },
+    {
+      "heading": "Жилет, если вы вышли на проезжую часть",
+      "body_sr": "Ako se vozač ili putnici nalaze na kolovozu van naselja (npr. zbog kvara), dužni su da nose svetloodbojni prsluk.",
+      "body_ru": "Если водитель или пассажиры находятся на проезжей части вне населённого пункта (например, из-за поломки), они обязаны надеть светоотражающий жилет — это связано с уже пройденной темой «пассивная безопасность/оснащение».",
+      "terms": [],
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 67",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
+    }
+  ]
+}
