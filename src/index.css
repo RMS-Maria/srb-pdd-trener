@@ -24,12 +24,25 @@
   --info: #1d6fbf;
   --info-bg: #e8f1fa;
 
-  /* Фирменный акцент — для навигации/заголовков/декора. Отдельно от семантических
-     цветов обратной связи (accent/danger/warning/info), чтобы не путать «бренд» с «верно/неверно». */
-  --brand: #7c3aed;
-  --brand-2: #ec4899;
-  --brand-bg: #f2e9fe;
+  /* Нейтральный фирменный акцент — используется только там, где нет цвета конкретной
+     вкладки (см. --tab-* ниже). Спокойный, не кричащий. */
+  --brand: #5b5a78;
+  --brand-2: #6b6a8c;
+  --brand-bg: #ecebf5;
   --brand-contrast: #ffffff;
+
+  /* У каждой вкладки — свой приглушённый цвет. Используется в сайдбаре, в шапке
+     текущей вкладки и в активных чипах внутри неё — по всему разделу один и тот же тон. */
+  --tab-theory: #4f7396;
+  --tab-theory-bg: #e6edf4;
+  --tab-glossary: #46876f;
+  --tab-glossary-bg: #e4f0ec;
+  --tab-flashcards: #a8752f;
+  --tab-flashcards-bg: #f5ead9;
+  --tab-tickets: #7a5ea3;
+  --tab-tickets-bg: #ece6f5;
+  --tab-profile: #a05a72;
+  --tab-profile-bg: #f5e6ec;
 
   --shadow-sm: 0 1px 3px rgba(32, 28, 46, 0.06);
   --shadow-md: 0 6px 20px rgba(32, 28, 46, 0.09);
@@ -58,10 +71,21 @@
   --info: #7cc0f5;
   --info-bg: #17293a;
 
-  --brand: #b794f6;
-  --brand-2: #f472b6;
-  --brand-bg: #2c2140;
+  --brand: #9695b8;
+  --brand-2: #a3a2c2;
+  --brand-bg: #26243a;
   --brand-contrast: #17111f;
+
+  --tab-theory: #8fb0d3;
+  --tab-theory-bg: #223142;
+  --tab-glossary: #7ec0a6;
+  --tab-glossary-bg: #1e3129;
+  --tab-flashcards: #d9a760;
+  --tab-flashcards-bg: #392e18;
+  --tab-tickets: #b49bd6;
+  --tab-tickets-bg: #2b2438;
+  --tab-profile: #d494a8;
+  --tab-profile-bg: #372329;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -97,15 +121,25 @@ a {
 .app-shell {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
 }
 
 .app-main {
   flex: 1;
+  overflow-y: auto;
   padding: 1rem;
-  max-width: 720px;
-  margin: 0 auto;
   width: 100%;
+}
+
+.app-main > * {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .top-bar {
@@ -114,12 +148,20 @@ a {
   justify-content: space-between;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  background: linear-gradient(120deg, var(--brand), var(--brand-2));
+  background: var(--brand);
   position: sticky;
   top: 0;
   z-index: 5;
   box-shadow: var(--shadow-sm);
+  transition: background 0.2s ease;
 }
+
+/* Шапка красится в цвет текущей вкладки — это и есть «у каждой вкладки свой цвет». */
+.section-theory .top-bar { background: var(--tab-theory); }
+.section-glossary .top-bar { background: var(--tab-glossary); }
+.section-flashcards .top-bar { background: var(--tab-flashcards); }
+.section-tickets .top-bar { background: var(--tab-tickets); }
+.section-profile .top-bar { background: var(--tab-profile); }
 
 .top-bar__title {
   font-weight: 800;
@@ -162,43 +204,52 @@ a {
   backdrop-filter: blur(2px);
 }
 
-.bottom-nav {
+.nav-rail {
   display: flex;
-  border-top: 1px solid var(--border);
+  flex-direction: column;
+  width: 76px;
+  flex-shrink: 0;
   background: var(--bg-elevated);
-  position: sticky;
-  bottom: 0;
-  padding-bottom: env(safe-area-inset-bottom);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding-left: env(safe-area-inset-left);
 }
 
-/* Основная навигация — внизу, в зоне большого пальца: самое частое действие должно
-   требовать наименьшего движения руки на телефоне. */
-.bottom-nav a {
-  flex: 1;
+.nav-rail a {
   text-align: center;
-  padding: 0.7rem 0.25rem;
+  padding: 0.85rem 0.2rem;
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   min-height: 44px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.15rem;
+  gap: 0.2rem;
+  border-left: 3px solid transparent;
+  transition: background 0.15s ease;
 }
 
-.bottom-nav a .nav-icon {
-  font-size: 1.25rem;
+.nav-rail a .nav-icon {
+  font-size: 1.3rem;
   line-height: 1;
+  transition: transform 0.15s ease;
 }
 
-.bottom-nav a.active {
-  color: var(--brand);
+/* У каждой вкладки свой приглушённый цвет — и в сайдбаре, и в шапке, и в активных
+   чипах внутри самой вкладки, чтобы разделы визуально не путались друг с другом. */
+.nav-rail a.nav-theory.active { color: var(--tab-theory); background: var(--tab-theory-bg); border-left-color: var(--tab-theory); }
+.nav-rail a.nav-glossary.active { color: var(--tab-glossary); background: var(--tab-glossary-bg); border-left-color: var(--tab-glossary); }
+.nav-rail a.nav-flashcards.active { color: var(--tab-flashcards); background: var(--tab-flashcards-bg); border-left-color: var(--tab-flashcards); }
+.nav-rail a.nav-tickets.active { color: var(--tab-tickets); background: var(--tab-tickets-bg); border-left-color: var(--tab-tickets); }
+.nav-rail a.nav-profile.active { color: var(--tab-profile); background: var(--tab-profile-bg); border-left-color: var(--tab-profile); }
+
+.nav-rail a.active {
   font-weight: 700;
 }
 
-.bottom-nav a.active .nav-icon {
+.nav-rail a.active .nav-icon {
   transform: scale(1.15);
 }
 
@@ -503,10 +554,22 @@ a {
 
 .chip.active {
   border-color: transparent;
-  background: linear-gradient(120deg, var(--brand), var(--brand-2));
-  color: var(--brand-contrast);
+  background: var(--brand);
+  color: #ffffff;
   font-weight: 700;
   box-shadow: var(--shadow-sm);
+}
+
+.section-theory .chip.active { background: var(--tab-theory); }
+.section-glossary .chip.active { background: var(--tab-glossary); }
+.section-flashcards .chip.active { background: var(--tab-flashcards); }
+.section-tickets .chip.active { background: var(--tab-tickets); }
+.section-profile .chip.active { background: var(--tab-profile); }
+
+/* В тёмной теме tab-цвета и brand — светлые пастельные оттенки, рассчитанные на текст
+   на тёмном фоне, поэтому в заливке чипа их надо сочетать с тёмным текстом, не с белым. */
+:root[data-theme='dark'] .chip.active {
+  color: #17111f;
 }
 
 @media (min-width: 720px) {
