@@ -18,19 +18,19 @@
       "status": "verified_official"
     },
     {
-      "heading": "Алкоголь — точная шкала требует отдельной проверки",
-      "body_sr": "Zakon pominje „upravljanje vozilom u stanju potpune alkoholisanosti (više od 2,00 mg/ml)” kao jedan od najtežih prekršaja. Postoji i niža granica koja se odnosi na sve vozače (i posebno stroža za početnike/profesionalce), ali tačnu brojku i član za tu opštu granicu ovde još nismo direktno potvrdili.",
-      "body_ru": "Закон явно упоминает «управление в состоянии полного алкогольного опьянения (более 2,00 мг/мл)» как один из самых тяжёлых случаев. Также существует более низкий общий порог для всех водителей (и отдельный, более строгий — для новичков/профессиональных водителей), но точную цифру и статью для этого ОБЩЕГО порога мы пока не подтвердили напрямую — не считайте единственной цифрой то, что здесь указано, обязательно уточните актуальный полный список порогов перед экзаменом.",
+      "heading": "Шесть уровней алкогольного опьянения",
+      "body_sr": "Zakon razlikuje šest nivoa alkoholisanosti: do 0,30 mg/ml — blaga; više od 0,30 do 0,50 mg/ml — umerena; više od 0,50 do 1,20 mg/ml — srednja; više od 1,20 do 1,60 mg/ml — teška; više od 1,60 do 2,00 mg/ml — veoma teška; više od 2,00 mg/ml — potpuna alkoholisanost (najteži oblik, deo definicije nasilničke vožnje).",
+      "body_ru": "Закон различает шесть уровней алкогольного опьянения: до 0,30 мг/мл — лёгкое; от 0,30 до 0,50 мг/мл — умеренное; от 0,50 до 1,20 мг/мл — среднее; от 1,20 до 1,60 мг/мл — тяжёлое; от 1,60 до 2,00 мг/мл — очень тяжёлое; свыше 2,00 мг/мл — полное опьянение (самая тяжёлая форма, входит в определение «нasilnička vožnja» — «агрессивное вождение»). Это шкала классификации тяжести; для новичков/профессиональных водителей на практике действует более строгий (нулевой или близкий к нулю) порог допустимости — это отдельное правило, которое мы называем как общеизвестный факт, но не связали здесь с конкретной статьёй.",
       "terms": [
         { "sr_latin": "alkohol", "sr_cyrillic": "алкохол", "ru_translation": "алкоголь", "glossary_id": "alkohol" }
       ],
       "source": {
         "type": "law",
         "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
-        "article": "član 41, stav 2, tačka 4",
+        "article": "član 187 (skala); član 41, stav 2, tačka 4 (najteži nivo)",
         "checked_at": "2026-09-06"
       },
-      "status": "needs_review"
+      "status": "verified_official"
     }
   ]
 }

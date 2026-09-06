@@ -14,11 +14,17 @@
       "status": "pedagogical"
     },
     {
-      "heading": "Минимальный возраст — уточняется",
-      "body_sr": "Za kategoriju B obično se navodi minimalni uzrast (u praksi — punoletstvo, 18 godina), ali tačan član zakona sa preciznom formulacijom još nismo direktno proverili u ovom konspektu.",
-      "body_ru": "Для категории B на практике обычно называют совершеннолетие (18 лет), но точную статью закона с формулировкой мы пока не проверили напрямую — не считайте эту цифру окончательной, перепроверьте у своей автошколы или в официальном Pravilnik o vozačkim dozvolama.",
+      "heading": "Минимальный возраст для категории B",
+      "body_sr": "Minimalna starost za kategorije B, B1 i BE je 18 godina.",
+      "body_ru": "Минимальный возраст для получения категорий B, B1 и BE — 18 лет.",
       "terms": [],
-      "status": "needs_review"
+      "source": {
+        "type": "law",
+        "document": "Zakon o osnovama bezbednosti saobraćaja na putevima",
+        "article": "član 180",
+        "checked_at": "2026-09-06"
+      },
+      "status": "verified_official"
     }
   ]
 }
